@@ -14,12 +14,12 @@
     />
     <!-- end of style links -->
   </head>
-  <body>
-    <header>
-      <section class="text w-50">
-        <div class="text-container">
-          <h1 class="fw-bolder">Hello everyone!✋</h1>
-          <p class="text-secondary">
+  <body data-scroll-container>
+    <header class = "row g-0" data-scroll-section data-scroll>
+      <section class="col text w-50">
+        <div class="text-container" >
+          <h1 class="fw-bolder my-0" data-scroll  data-scroll-speed="2">Hello everyone!✋</h1>
+          <p class="text-secondary my-0" data-scroll data-scroll-speed="2">
             My name is Firas , my name is Firas and im a front-end web developer
             <span class="heighlight text-warning">Sass</span>
             for hire 📋! I mainly work with ,
@@ -29,8 +29,18 @@
           </p>
         </div>
       </section>
-      <section class="bg-dark w-50"></section>
+      <section class="col bg-dark w-50"></section>
     </header>
+    <main class="bg-primary" data-scroll-section>
+      <div class="row g-0">
+        <section class="col bg-warning project-img"></section>
+        <section class="col bg-info project-description"></section>
+      </div>
+      <div class="row g-0">
+        <section class="col bg-info project-img"></section>
+        <section class="col bg-success project-description"></section>
+      </div>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

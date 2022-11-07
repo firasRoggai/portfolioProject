@@ -6,17 +6,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  height: 107vh;
-}
-
 .heighlight {
   border-bottom: dotted rgb(165, 164, 164) 2px;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
+body {
+  width: 100%;
 }
 
 section {
@@ -34,6 +29,7 @@ section {
 .text-container h1 {
   font-size: 4rem;
   font-weight: bolder;
+  margin: 0px auto !important;
 }
 .text-container p {
   font-size: 1.3rem;
