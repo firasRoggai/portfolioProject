@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  list-style: none;
 }
 
 .heighlight {
@@ -14,8 +15,23 @@ body {
   width: 100%;
 }
 
-section {
+.projects {
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  background-image: linear-gradient(130deg, hsl(55deg, 95%, 70%) 1%, hsl(55deg, 93%, 72%) 44%, hsl(56deg, 91%, 74%) 51%, hsl(56deg, 89%, 75%) 52%, hsl(57deg, 87%, 76%) 52%, hsl(56deg, 86%, 78%) 51%, hsl(57deg, 83%, 80%) 52%, hsl(57deg, 81%, 81%) 56%, hsl(57deg, 80%, 83%) 87%);
+}
+.projects .card {
+  cursor: pointer;
+}
+.projects .card-text {
+  line-height: 2.1rem;
+}
+
+.content-section {
   height: 100vh;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
 }
 
 .text {
@@ -34,4 +50,12 @@ section {
 .text-container p {
   font-size: 1.3rem;
   line-height: 2.3rem;
+}
+
+.contact {
+  min-height: 100vh;
+}
+.contact .content-section {
+  display: grid;
+  place-items: center center;
 }/*# sourceMappingURL=main.css.map */

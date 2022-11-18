@@ -6,6 +6,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
+    list-style: none;
 }
 
 .heighlight {
@@ -15,9 +16,36 @@
 body {
     width: 100%;
 }
-section {
+.projects {
+backdrop-filter: blur(15px);
+
+    background-image: linear-gradient(
+  130deg,
+  hsl(55deg 95% 70%) 1%,
+  hsl(55deg 93% 72%) 44%,
+  hsl(56deg 91% 74%) 51%,
+  hsl(56deg 89% 75%) 52%,
+  hsl(57deg 87% 76%) 52%,
+  hsl(56deg 86% 78%) 51%,
+  hsl(57deg 83% 80%) 52%,
+  hsl(57deg 81% 81%) 56%,
+  hsl(57deg 80% 83%) 87%
+);
+    .card {
+        cursor: pointer;
+    }
+    .card-text {
+        line-height: 2.1rem;
+    }
+//     h1 {
+// // 
+//     }
+}
+.content-section {
     height: 100vh;
-    // width: 100vw;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
 }
 .text {
     display: grid;
@@ -34,4 +62,12 @@ section {
         line-height: 2.3rem;
     }
     width: 88%;
+}
+// skills section:
+.contact {
+    min-height: 100vh;
+    .content-section {
+        display: grid;
+        place-items: center center;
+    }
 }
