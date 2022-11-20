@@ -58,4 +58,10 @@ body {
 .contact .content-section {
   display: grid;
   place-items: center center;
+}
+
+footer {
+  display: grid;
+  color: aqua !important;
+  place-items: center center;
 }/*# sourceMappingURL=main.css.map */
