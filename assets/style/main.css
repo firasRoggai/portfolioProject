@@ -16,8 +16,7 @@ body {
 }
 
 .projects {
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   background-image: linear-gradient(130deg, hsl(55deg, 95%, 70%) 1%, hsl(55deg, 93%, 72%) 44%, hsl(56deg, 91%, 74%) 51%, hsl(56deg, 89%, 75%) 52%, hsl(57deg, 87%, 76%) 52%, hsl(56deg, 86%, 78%) 51%, hsl(57deg, 83%, 80%) 52%, hsl(57deg, 81%, 81%) 56%, hsl(57deg, 80%, 83%) 87%);
 }
 .projects .card {
@@ -29,7 +28,6 @@ body {
 
 .content-section {
   height: 100vh;
-  border-bottom: 2px solid black;
   display: flex;
   align-items: center;
 }
@@ -61,7 +59,12 @@ body {
 }
 
 footer {
+  padding: 1rem;
   display: grid;
-  color: aqua !important;
   place-items: center center;
-}/*# sourceMappingURL=main.css.map */
+}
+footer p {
+  margin: 0 !important;
+}
+
+/*# sourceMappingURL=main.css.map */

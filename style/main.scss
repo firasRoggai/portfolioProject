@@ -37,13 +37,10 @@ backdrop-filter: blur(15px);
     .card-text {
         line-height: 2.1rem;
     }
-//     h1 {
-// // 
-//     }
 }
 .content-section {
     height: 100vh;
-    border-bottom: 2px solid black;
+    // border-bottom: 2px solid back;
     display: flex;
     align-items: center;
 }
@@ -72,4 +69,11 @@ backdrop-filter: blur(15px);
     }
 }
 // 
-
+footer {
+    padding: 1rem;
+    display: grid;
+    place-items: center center;
+    p {
+        margin : 0 !important;
+    }
+}

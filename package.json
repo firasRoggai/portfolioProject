@@ -6,13 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sass-dev": "sass --watch --update --style=expanded style:assets/style",
+    "sass-prod": "sass --no-source-map --style=compressed style:style"
   },
   "devDependencies": {
+    "sass": "^1.57.1",
     "vite": "^3.2.0"
   },
   "dependencies": {
-    "bootstrap": "^5.2.2",
-    "locomotive-scroll": "^4.1.4"
+    "bootstrap": "^5.2.2"
   }
 }
