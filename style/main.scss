@@ -17,6 +17,9 @@
   height :80vh;
   width :80vh;
   background: #ffe347;
+  @media screen and (max-width: 900px){
+    display: none;
+  }
 }
 .heighlight {
   border-bottom: dotted rgb(165, 164, 164) 2px;
