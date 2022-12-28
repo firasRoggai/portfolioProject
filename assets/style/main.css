@@ -7,6 +7,17 @@
   list-style: none;
 }
 
+.blob {
+  position: fixed;
+  top: -350px;
+  left: -250px;
+  z-index: -1;
+  border-radius: 50%;
+  height: 80vh;
+  width: 80vh;
+  background: #ffe347;
+}
+
 .heighlight {
   border-bottom: dotted rgb(165, 164, 164) 2px;
 }
@@ -26,12 +37,6 @@ body {
   line-height: 2.1rem;
 }
 
-.content-section {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
 .text {
   display: grid;
   place-items: center center;
@@ -49,13 +54,30 @@ body {
   font-size: 1.3rem;
   line-height: 2.3rem;
 }
-
-.contact {
-  min-height: 100vh;
+@media screen and (max-width: 900px) {
+  .text-container h1 {
+    font-size: 3.1rem;
+    padding: 1rem 0rem;
+  }
+  .text-container p {
+    font-size: 1rem;
+  }
 }
-.contact .content-section {
+
+.contact .content-section,
+.contact .img-section {
   display: grid;
   place-items: center center;
+}
+@media screen and (max-width: 900px) {
+  .contact .img-section {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .contact h3 {
+    font-size: 20px;
+  }
 }
 
 footer {
