@@ -14,3 +14,6 @@ const observer = new IntersectionObserver(entries => {
     margin: 5
 })
 observer.observe(header)
+// messege : 
+console.log("Hi there !")
+console.log("don't forget to say hi on my twitter :)  @firasRoggai")

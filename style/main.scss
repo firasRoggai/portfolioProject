@@ -131,5 +131,11 @@ footer {
   place-items: center center;
   p {
     margin: 0 !important;
+    color:white;
+  }
+  @media screen and (max-width:900px){
+    p{
+      font-size: 13px;
+    }
   }
 }

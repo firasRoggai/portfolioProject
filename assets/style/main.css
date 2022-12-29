@@ -138,6 +138,12 @@ footer {
 }
 footer p {
   margin: 0 !important;
+  color: white;
+}
+@media screen and (max-width: 900px) {
+  footer p {
+    font-size: 13px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
