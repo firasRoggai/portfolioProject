@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "sass-dev": "sass --watch --update --style=expanded style:assets/style",
-    "sass-prod": "sass --no-source-map --style=compressed style:style"
+    "sass-prod": "sass --no-source-map --style=compressed style:assets/style"
   },
   "devDependencies": {
     "sass": "^1.57.1",
