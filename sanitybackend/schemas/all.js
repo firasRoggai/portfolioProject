@@ -64,4 +64,21 @@ const project = {
       }
     ]
   }
-  export {hero,project,contact};
+  const reviews = {
+    name: 'reviews',
+    type: 'document',
+      title: 'reviews section',
+    fields: [
+      {
+        name: 'name',
+        type: 'string',
+        title: 'Name'
+      },
+      {
+        name: 'comment',
+        type: 'string',
+        title: 'Comment'
+      }
+    ]
+  }
+  export {hero,project,contact,reviews};
