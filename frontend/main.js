@@ -42,7 +42,7 @@ function fetchProjects(content) {
     }
 
     let { project: name, description, codeLink, demoLink,status } = element;
-    statusHtml = !status ? '<span class="not_done">not done</span>':""
+    statusHtml = !status ? '<span class="not_done">not done</span>':'<span class="done">done</span>'
     let htmlCard = `
             <div class="card col-md-3 col-10 card border-primary py-1 mb-4">
             <div class="card-body">
