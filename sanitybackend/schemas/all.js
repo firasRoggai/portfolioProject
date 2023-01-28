@@ -39,6 +39,11 @@ const project = {
         name: 'demoLink',
         type: 'string',
         title: 'Demo link'
+      },
+      {
+        name: 'status',
+        type: 'boolean',
+        title: 'is it done?'
       }
     ]
   }

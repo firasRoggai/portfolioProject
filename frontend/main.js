@@ -34,16 +34,20 @@ function fetchHero(content) {
 function fetchProjects(content) {
   content.result.forEach((element, index) => {
     let id;
+    let statusHtml;
     if (index < 3) {
       id = "firstRow";
     } else {
       id = "secoundRow";
     }
-    let { project: name, description, codeLink, demoLink } = element;
+
+    let { project: name, description, codeLink, demoLink,status } = element;
+    statusHtml = !status ? '<span class="not_done">not done</span>':""
     let htmlCard = `
             <div class="card col-md-3 col-10 card border-primary py-1 mb-4">
             <div class="card-body">
               <h3 class="card-title fw-bold py-1">${name}</h3>
+              ${statusHtml}
               <p class="card-text py-3 text-muted">
               ${description}
               </p>
@@ -72,7 +76,7 @@ function fetchContact(content) {
 }
 function fetchReviews(content) {
   content.result.forEach((element) => {
-    let id = "skill_container";
+    let id = "reviews_container";
     let { name, comment } = element;
     let htmlCard = `
     <div class="skill-box px-3 py-3 col-10 col-md-3 my-2 my-md-0">

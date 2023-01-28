@@ -11,6 +11,13 @@
 .heighlight {
   border-bottom: dotted rgb(165, 164, 164) 2px;
 }
+.not_done {
+  background: rgb(255, 120, 120);
+  padding: 0px 15px;
+  // color: white;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
 // the wave:
 .wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
@@ -89,8 +96,8 @@ header , .contact {
     }
   }
 }
-// skills:
-.skills {
+// reviews:
+.reviews {
   width: 100%;
   overflow: hidden;
   background-image: radial-gradient(rgba(108, 110, 245, 0.73) 2px, transparent 2px);
@@ -103,7 +110,7 @@ header , .contact {
   border-radius: 7px;
   .skill-small-box {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.7rem;
     border-radius: 5px;
   }
 }
